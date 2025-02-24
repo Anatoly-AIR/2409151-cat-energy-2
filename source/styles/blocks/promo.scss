@@ -1,5 +1,35 @@
-.header {
-  background-color: #663399;
+.promo {
+  background-color: #ffffff;
+}
+
+.promo__wrapper {
+  background-color: #68b738;
+  opacity: 0.85;
+}
+
+.promo__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
   color: #ffffff;
-  padding: 10px 15px;
+}
+
+.promo__subtitle {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.promo__button {
+  background-color: #68b738;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
 }
