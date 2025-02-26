@@ -1,9 +1,13 @@
+.example {
+  background-color: $basic-grey;
+}
+
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  color: #000000;
+  color: $basic-black;
 }
 
 .example__box-title {
@@ -11,7 +15,7 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: $basic-black;
 }
 
 .example__box-subtitle {
@@ -19,7 +23,7 @@
   font-size: 12px;
   line-height: 12px;
   font-weight: 400;
-  color: #000000;
+  color: $basic-black;
 }
 
 .example__result {
@@ -28,5 +32,5 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #000000;
+  color: $basic-black;
 }

@@ -1,29 +1,29 @@
 .button--primary {
-  background-color: #68b738;
+  background-color: $basic-green;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 .button--secondary {
-  background-color: #f2f2f2;
+  background-color: $basic-grey-2;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #444444;
+  color: $special-dark-grey;
 }
 
 .button--subscribe {
-  background-color: #68b738;
+  background-color: $basic-green;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic-white;
 }

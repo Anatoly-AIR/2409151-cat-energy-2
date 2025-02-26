@@ -1,9 +1,9 @@
 .promo {
-  background-color: #ffffff;
+  background-color: $basic-white;
 }
 
 .promo__wrapper {
-  background-color: #68b738;
+  background-color: $basic-green;
   opacity: 0.85;
 }
 
@@ -12,7 +12,7 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 .promo__subtitle {
@@ -21,15 +21,15 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic-white;
 }
 
 .promo__button {
-  background-color: #68b738;
+  background-color: $basic-green;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $basic-white;
 }
