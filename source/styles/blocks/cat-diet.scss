@@ -1,0 +1,22 @@
+.cat-diet {
+  background-color: $basic-grey-2;
+}
+
+.cat-diet__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.cat-diet__catalog {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-black;
+}
