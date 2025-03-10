@@ -27,8 +27,40 @@
   height: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .cat-diet__slim {
+    background-image: url("../../icons/cat-slim-tablet.svg");
+    width: 140px;
+    height: 194px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cat-diet__slim {
+    background-color: url("../../icons/cat-slim-desktop.svg");
+    width: 70px;
+    height: 97px;
+  }
+}
+
 .cat-diet__pro {
   background-image: url("../../icons/cat-pro.svg");
   width: 67px;
   height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .cat-diet__pro {
+    background-image: url("../../icons/cat-pro-tablet.svg");
+    width: 268px;
+    height: 112px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cat-diet__pro {
+    background-image: url("../../icons/cat-pro-desktop.svg");
+    width: 134px;
+    height: 56px;
+  }
 }
