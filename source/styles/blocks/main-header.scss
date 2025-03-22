@@ -1,0 +1,19 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+  padding: 13px 20px;
+
+  @media (min-width: $tablet-width) {
+    height: 140px;
+  }
+}
