@@ -3,8 +3,15 @@
 }
 
 .promo__wrapper {
+  background-image: url("../../images/index-background-mobile@1x.png");
+  background-repeat: no-repeat;
   background-color: $basic-green;
   opacity: 0.85;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    background-image: none;
+  }
 }
 
 .promo__title {
@@ -13,6 +20,12 @@
   line-height: 36px;
   font-weight: 400;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $basic-black;
+  }
 }
 
 .promo__subtitle {
@@ -22,9 +35,18 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $basic-black;
+  }
 }
 
 .promo__button {
+  min-width: 280px;
+  min-height: 40px;
+  border: none;
   background-color: $basic-green;
   font-family: $secondary-font;
   font-size: 16px;
