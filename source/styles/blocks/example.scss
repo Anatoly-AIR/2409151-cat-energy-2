@@ -1,5 +1,9 @@
 .example {
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
 }
 
 .example__title {
@@ -8,6 +12,22 @@
   line-height: 40px;
   font-weight: 400;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__text {
+  min-width: 280px;
+  // min-height: 108px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__box-title {
@@ -16,6 +36,11 @@
   line-height: 24px;
   font-weight: 400;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__box-subtitle {
@@ -24,6 +49,11 @@
   line-height: 12px;
   font-weight: 400;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__result {
@@ -33,4 +63,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
