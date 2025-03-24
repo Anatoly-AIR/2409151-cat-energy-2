@@ -1,13 +1,37 @@
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__text {
+  max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 163px;
+  }
+}
+
 .contacts__text--big {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color: $basic-black;
+  color: $special-dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .contacts__text--small {
+  font-size: 14px;
   line-height: 20px;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
