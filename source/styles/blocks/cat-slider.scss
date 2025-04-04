@@ -1,3 +1,17 @@
-.cat-slider__list {
-  list-style-type: none;
+.cat-slider {
+  background-color: $basic-grey;
+  padding: 0 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.cat-slider__item--thick {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 1;
+}
+
+.cat-slider__item--thin {
+  transform: translateX(50%);
 }
