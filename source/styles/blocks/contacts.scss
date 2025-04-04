@@ -1,10 +1,17 @@
-.contacts__wrapper {
+.contacts {
   display: flex;
   justify-content: space-between;
+  padding: 26px 20px;
 }
+
+/* .contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+} */
 
 .contacts__text {
   max-width: 140px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 163px;
@@ -26,8 +33,10 @@
 }
 
 .contacts__text--small {
+  font-family: $primary-font;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {

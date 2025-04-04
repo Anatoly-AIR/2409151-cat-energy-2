@@ -1,9 +1,16 @@
 .example {
   background-color: $basic-grey;
+  padding: 25px 20px;
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
   }
+}
+
+.example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .example__title {
@@ -12,6 +19,8 @@
   line-height: 40px;
   font-weight: 400;
   color: $basic-black;
+  margin-top: 0;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -20,8 +29,13 @@
 }
 
 .example__text {
-  min-width: 280px;
-  // min-height: 108px;
+  width: 280px;
+  height: 108px;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-black;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -30,12 +44,21 @@
   }
 }
 
+.example__box {
+  width: 124px;
+  height: 70px;
+  text-align: center;
+  padding-top: 14px;
+  box-sizing: border-box;
+}
+
 .example__box-title {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $basic-black;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -49,6 +72,8 @@
   line-height: 12px;
   font-weight: 400;
   color: $basic-black;
+  width: 77px;
+  height: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -63,6 +88,8 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-black;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

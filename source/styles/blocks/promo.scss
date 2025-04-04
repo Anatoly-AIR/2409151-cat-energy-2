@@ -1,17 +1,71 @@
 .promo {
   background-color: $basic-white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    // padding-left: 120px;
+  }
+}
+
+.promo::before {
+  width: 320px;
+  height: 302px;
+  // display: block;
+  content: "";
+  background-image: url("../../images/index-background-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 694px;
+    position: absolute;
+    // top: -170px;
+    left: 720px;
+    background-image: url("../../images/index-background-mobile@1x.png");
+  }
+}
+
+.promo::after {
+  width: 320px;
+  height: 302px;
+  display: block;
+  content: "";
+  background-color: $basic-green;
+  position: absolute;
+  inset: 0;
+  opacity: 0.85;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    opacity: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 694px;
+    background-color: $basic-green;
+    opacity: 0.85;
+    position: absolute;
+    // top: -170px;
+    left: 720px;
+  }
 }
 
 .promo__wrapper {
-  background-image: url("../../images/index-background-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-color: $basic-green;
-  opacity: 0.85;
 
-  @media (min-width: $tablet-width) {
-    background-color: $basic-white;
-    background-image: none;
-  }
 }
 
 .promo__title {
@@ -20,11 +74,15 @@
   line-height: 36px;
   font-weight: 400;
   color: $basic-white;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 414px;
     font-size: 60px;
     line-height: 60px;
     color: $basic-black;
+    text-align: left;
+    margin: 0;
   }
 }
 
@@ -35,17 +93,19 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-white;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: $basic-black;
+    text-align: start;
   }
 }
 
 .promo__button {
-  min-width: 280px;
-  min-height: 40px;
+  width: 280px;
+  height: 40px;
   border: none;
   background-color: $basic-green;
   font-family: $secondary-font;
@@ -54,4 +114,13 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    width: 242px;
+    height: 54px;
+    position: absolute;
+    top: 280px;
+    left: 100px;
+    padding: 0;
+  }
 }

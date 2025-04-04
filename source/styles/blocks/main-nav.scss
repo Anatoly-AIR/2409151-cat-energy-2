@@ -1,5 +1,12 @@
 .main-nav {
+  display: none;
 
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .main-nav__toggle {
@@ -18,7 +25,6 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 }
