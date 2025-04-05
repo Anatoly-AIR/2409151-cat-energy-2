@@ -4,13 +4,9 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-white;
+    margin: 30px;
+    padding: 0;
   }
-}
-
-.example__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .example__title {
@@ -28,6 +24,16 @@
   }
 }
 
+.example__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: start;
+  }
+}
+
 .example__text {
   width: 280px;
   height: 108px;
@@ -41,6 +47,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 708px;
   }
 }
 
@@ -50,7 +57,13 @@
   text-align: center;
   padding-top: 14px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 77px;
+  }
 }
+
 
 .example__box-title {
   font-family: $secondary-font;
@@ -89,10 +102,13 @@
   text-transform: uppercase;
   color: $basic-black;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 174px;
     font-size: 20px;
     line-height: 20px;
+    margin: auto 0;
+    margin-left: auto;
   }
 }
