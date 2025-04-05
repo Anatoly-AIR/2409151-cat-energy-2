@@ -42,6 +42,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 230px;
@@ -120,12 +121,32 @@
   width: 200px;
   height: 54px;
   margin: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    width: 204px;
+    width: 245px;
     height: 72px;
     font-size: 16px;
     line-height: 24px;
     padding-top: 31px;
+  }
+}
+
+.description__box-number {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    // width: 134px;
+    // height: 280px;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 280px;
+    font-weight: 400;
+    color: $basic-grey-2;
+    margin: 0;
+    position: absolute;
+    top: -35px;
+    left: 50%;
   }
 }
