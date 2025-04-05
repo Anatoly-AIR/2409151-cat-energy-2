@@ -3,6 +3,10 @@
   padding: 0 20px;
   position: relative;
   z-index: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 100px 104px;
+  }
 }
 
 .cat-slider__item--thick {
@@ -10,8 +14,17 @@
   top: 0;
   left: 20px;
   z-index: 1;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 100px;
+    left: 104px;
+  }
 }
 
 .cat-slider__item--thin {
   transform: translateX(50%);
+
+  @media screen and (min-width: $tablet-width) {
+    transform: translateX(47%);
+  }
 }
