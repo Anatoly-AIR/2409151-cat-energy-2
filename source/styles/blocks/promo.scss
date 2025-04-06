@@ -65,7 +65,9 @@
 }
 
 .promo__wrapper {
-
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 234px 0 120px;
+  }
 }
 
 .promo__title {
@@ -119,8 +121,8 @@
     width: 242px;
     height: 54px;
     position: absolute;
-    top: 280px;
-    left: 100px;
+    top: 210px;
+    left: 120px;
     padding: 0;
   }
 }
