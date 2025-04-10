@@ -5,7 +5,16 @@
   z-index: 0;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 100px 104px;
+    height: 462px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    height: 462px;
+    position: relative;
+    top: -330px;
+    padding: 0;
+    // z-index: -1;
   }
 }
 
@@ -16,15 +25,26 @@
   z-index: 1;
 
   @media screen and (min-width: $tablet-width) {
-    top: 100px;
+    top: -150px;
     left: 104px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: -136px;
+    left: 790px;
   }
 }
 
 .cat-slider__item--thin {
-  transform: translateX(50%);
+  position: absolute;
 
   @media screen and (min-width: $tablet-width) {
-    transform: translateX(47%);
+    top: -150px;
+    left: 366px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: -136px;
+    left: 1053px;
   }
 }

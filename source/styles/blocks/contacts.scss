@@ -6,6 +6,19 @@
   @media screen and (min-width: $tablet-width) {
     padding: 60px 70px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 565px;
+    height: 199px;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    // position: absolute;
+    // top: 95px;
+    // left: 110px;
+    background-color: $basic-white;
+    transform: translate(110px, 295px);
+    z-index: 1;
+  }
 }
 
 /* .contacts__wrapper {
