@@ -1,3 +1,31 @@
+.cards {
+  padding: 0 20px;
+}
+
+.cards__list {
+  margin: 0;
+  list-style-type: none;
+}
+
+/* .cards__item {
+  display: grid;
+  grid-template: "item-1 item-2 ." 41px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px / 140px 1fr 1fr;
+} */
+
+.cards__content {
+  display: grid;
+  grid-template: "item-1 item-2 ." 41px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px / 140px 1fr 1fr;
+}
+
+.cards__image-container {
+  grid-area: item-1;
+}
+
+.cards__block-info-title {
+  margin: 0;
+  grid-area: item-2;
+}
+
 .cards__title {
   font-family: $secondary-font;
   font-size: 36px;
