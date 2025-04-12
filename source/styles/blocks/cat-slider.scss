@@ -1,5 +1,6 @@
 .cat-slider {
   background-color: $basic-grey;
+  height: 296px;
   padding: 0 20px;
   position: relative;
   z-index: 0;
@@ -37,6 +38,7 @@
 
 .cat-slider__item--thin {
   position: absolute;
+  left: 161px;
 
   @media screen and (min-width: $tablet-width) {
     top: -150px;
