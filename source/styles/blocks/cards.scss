@@ -18,26 +18,11 @@
   margin-bottom: 17px;
 }
 
-/* .cards__info {
-  display: grid;
-  grid-template: "item-1 ." min-content "item-1 ." min-content ". ." min-content "item-2 item-2" min-content "item-2 item-2" min-content "item-2 item-2" min-content / 70px 70px;
-} */
-
 .cards__info-box {
   display: grid;
   grid-template-columns: 70px 70px;
-  grid-template-rows: min-content min-content min-content min-content min-content;
+  grid-template-rows: min-content 16px min-content min-content min-content;
 }
-
-/* .cards__item {
-  display: grid;
-  grid-template: "item-1 item-2 ." 41px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px / 140px 1fr 1fr;
-} */
-
-/* .cards__content {
-  display: grid;
-  grid-template: "item-1 item-2 ." 41px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px "item-1 item-3 item-4" 16px / 140px 1fr 1fr;
-} */
 
 .cards__image-container {
   width: 140px;
@@ -74,18 +59,71 @@
   padding: 27px 0 41px;
 }
 
-.cards__content-title {
+.cards__more {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__more-image {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../icons/plus.svg");
+  // background-position: center;
+  margin: 0 auto;
+}
+
+.cards__more-title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+  color: $special-dark-grey-2;
+  margin: 0;
+  padding: 23px 0 8px;
+  text-align: center;
 }
 
-.cards__content-subtitle {
+.cards__more-subtitle {
   font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+  color: $special-dark-grey;
+  margin: 0;
+  padding-bottom: 21px;
+  text-align: center;
 }
 
+.item1 {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.item2 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  justify-self: end;
+}
+
+.item3 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.item4 {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  justify-self: end;
+}
+
+.item5 {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+}
+
+.item6 {
+  grid-column: 2 / 3;
+  grid-row: 5 / 6;
+  justify-self: end;
+}
