@@ -20,10 +20,9 @@
   }
 }
 
-/* .contacts__wrapper {
-  display: flex;
-  justify-content: space-between;
-} */
+.contacts--catalog {
+  background-color: $basic-grey;
+}
 
 .contacts__text {
   max-width: 140px;
