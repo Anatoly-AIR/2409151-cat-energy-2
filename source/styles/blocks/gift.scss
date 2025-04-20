@@ -1,6 +1,39 @@
 .gift {
+  width: 280px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 35px;
+  padding: 59px 0 43px;
+  position: relative;
+  z-index: 0;
+}
+
+.gift::before {
+  width: 280px;
+  height: 290px;
+  content: "";
+  background-image: url("../../images/cat-backpack-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.gift::after {
+  width: 280px;
+  height: 290px;
+  display: block;
+  content: "";
   background-color: $basic-green;
+  position: absolute;
+  inset: 0;
   opacity: 0.85;
+  z-index: -1;
 }
 
 .gift__text {
@@ -9,11 +42,23 @@
   line-height: 20px;
   font-weight: 400;
   color: $basic-white;
+  width: 161px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
-  .gift__icon {
+.gift__icon {
+  align-self: center;
+
+  @media screen and (min-width: 768px) {
     width: 80px;
     height: 83px;
   }
 }
+
+/* @media screen and (min-width: 768px) {
+  .gift__icon {
+    width: 80px;
+    height: 83px;
+  }
+} */
