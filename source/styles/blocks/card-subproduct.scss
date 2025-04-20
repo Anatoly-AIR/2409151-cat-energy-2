@@ -1,3 +1,9 @@
+.card-subproduct {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+}
+
 .card-subproduct__name {
   font-family: $secondary-font;
   font-size: 16px;
@@ -5,6 +11,8 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $special-dark-grey;
+  margin: 0;
+  padding: 13px 0;
 }
 
 .card-subproduct__quantity {
@@ -13,6 +21,10 @@
   line-height: 14px;
   font-weight: 400;
   color: $special-dark-grey;
+  margin: 0;
+  padding-bottom: 15px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 
 .card-subproduct__price {
@@ -21,4 +33,9 @@
   line-height: 14px;
   font-weight: 400;
   color: $special-dark-grey;
+  margin: 0;
+  padding-bottom: 15px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: end;
 }
