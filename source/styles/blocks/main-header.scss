@@ -16,6 +16,12 @@
   }
 }
 
+.main-header--catalog {
+  @media screen and (min-width: $desktop-width) {
+    padding: 55px 110px 74px;
+  }
+}
+
 .main-header__logo {
   display: flex;
   justify-content: space-between;
