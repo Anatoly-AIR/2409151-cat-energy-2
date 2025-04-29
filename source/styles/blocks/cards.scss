@@ -1,27 +1,82 @@
 .cards {
   padding: 0 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .cards__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media screen and (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    // display: grid;
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
 }
 
 .cards__item {
   // margin-bottom: 25px;
   padding: 20px 0 25px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $basic-grey;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.cards__item--show-products {
+  @media screen and (min-width: $tablet-width) {
+    padding-top: 75px;
+    background-color: $basic-white;
+  }
 }
 
 .cards__content {
   display: flex;
   margin-bottom: 17px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // transform: translateY(-80px);
+  }
 }
 
 .cards__info-box {
   display: grid;
   grid-template-columns: 70px 70px;
   grid-template-rows: min-content 16px min-content min-content min-content;
+
+  @media screen and (min-width: $tablet-width) {
+    grid-template-columns: 125px 125px;
+    grid-template-rows: min-content 20px min-content min-content min-content;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    grid-template-columns: 85px 85px;
+    grid-template-rows: min-content 20px min-content min-content min-content;
+  }
 }
 
 .cards__image-container {
@@ -31,6 +86,11 @@
   align-items: center;
   justify-content: center;
   // padding: 11px 36px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+  }
 }
 
 .cards__info-title {
@@ -40,6 +100,16 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 135px;
+    font-size: 20px;
+    line-height: 24px;
+    grid-column: 1 / 3;
+    // grid-row: 3 / 4;
+    justify-self: center;
+    text-align: center;
+  }
 }
 
 .cards__info-text {
@@ -48,6 +118,11 @@
   line-height: 16px;
   font-weight: 400;
   margin: 0;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .cards__title {
@@ -57,11 +132,22 @@
   font-weight: 400;
   margin: 0;
   padding: 27px 0 41px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+  }
 }
 
 .cards__more {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 170px;
+    // height: 60px;
+  }
 }
 
 .cards__more-image {
@@ -70,6 +156,12 @@
   background-image: url("../../icons/plus.svg");
   // background-position: center;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    background-image: url ("../../icons/plus-tablet.svg");
+  }
 }
 
 .cards__more-title {
@@ -82,6 +174,12 @@
   margin: 0;
   padding: 23px 0 8px;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 50px 0 23px;
+  }
 }
 
 .cards__more-subtitle {
@@ -93,6 +191,12 @@
   margin: 0;
   padding-bottom: 21px;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 82px;
+  }
 }
 
 .item1 {
