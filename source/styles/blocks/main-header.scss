@@ -1,0 +1,41 @@
+.main-header {
+  padding: 13px 20px 14px;
+  // border-bottom: 1px #d9d9d9;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 25px 34px 65px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: 55px 110px 29px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.main-header--catalog {
+  @media screen and (min-width: $desktop-width) {
+    padding: 55px 110px 74px;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+
+  @media screen and (min-width: $tablet-width) {
+    justify-content: start;
+    height: 50px;
+  }
+}
+
+.main-header__logo-text {
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 13px;
+  }
+}

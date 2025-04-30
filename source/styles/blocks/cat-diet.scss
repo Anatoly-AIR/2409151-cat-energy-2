@@ -1,5 +1,35 @@
+.cat-diet-wrapper {
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    // margin: 0 110px;
+    padding: 82px 110px;
+  }
+}
+
 .cat-diet {
+  display: flex;
+  flex-wrap: wrap;
   background-color: $basic-grey-2;
+  margin: 20px;
+  padding: 20px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin: 0 30px 30px;
+    padding: 77px 29px 53px 53px;
+    display: grid;
+    grid-template: "item-1 item-2" 36px "item-3 item-2" 96px "item-4 item-2" 38px / 1fr 1fr;
+    gap: 24px 19px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+    margin-right: 80px;
+    padding: 41px 61px 55px 52px;
+    display: flex;
+    // grid-template: "item-1 item-2" 36px "item-3 item-2" 96px "item-4 item-2" 38px / 1fr 1fr;
+    // gap: 24px 19px;
+  }
 }
 
 .cat-diet__title {
@@ -9,9 +39,45 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-black;
+  margin: 0;
+  padding-left: 20px;
+  align-self: center;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    grid-area: item-1;
+  }
+}
+
+.cat-diet__description {
+  width: 227px;
+  height: 90px;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  margin: 22px 0;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 340px;
+    height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    grid-area: item-3;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 457px;
+    height: 72px;
+  }
 }
 
 .cat-diet__catalog {
+  display: flex;
+  align-items: center;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
@@ -19,48 +85,57 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 24px;
+    grid-area: item-4;
+  }
 }
 
 .cat-diet__slim {
   background-image: url("../../icons/cat-slim.svg");
-  width: 36px;
-  height: 50px;
-}
+  width: 50px;
+  height: 53px;
 
-@media screen and (min-width: 768px) {
-  .cat-diet__slim {
+  @media screen and (min-width: $tablet-width) {
     background-image: url("../../icons/cat-slim-tablet.svg");
-    width: 140px;
-    height: 194px;
+    width: 200px;
+    height: 211px;
+    margin-left: 20px;
+    grid-area: item-2;
   }
-}
 
-@media screen and (min-width: 1440px) {
-  .cat-diet__slim {
+  @media screen and (min-width: $desktop-width) {
     background-color: url("../../icons/cat-slim-desktop.svg");
-    width: 70px;
-    height: 97px;
+    width: 100px;
+    height: 106px;
   }
 }
 
 .cat-diet__pro {
   background-image: url("../../icons/cat-pro.svg");
   width: 67px;
-  height: 28px;
-}
+  height: 50px;
 
-@media screen and (min-width: 768px) {
-  .cat-diet__pro {
+  @media screen and (min-width: $tablet-width) {
     background-image: url("../../icons/cat-pro-tablet.svg");
     width: 268px;
-    height: 112px;
+    height: 200px;
+    grid-area: item-2;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    background-image: url("../../icons/cat-pro-desktop.svg");
+    width: 134px;
+    height: 100px;
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .cat-diet__pro {
-    background-image: url("../../icons/cat-pro-desktop.svg");
-    width: 134px;
-    height: 56px;
-  }
+.cat-diet__arrow-icon {
+  background-image: url("../../icons/arrow-icon.svg");
+  margin-left: 15px;
+  width: 24px;
+  height: 12px;
 }
