@@ -8,10 +8,8 @@
   }
 
   @media screen and (min-width: $desktop-width) {
+    transform: translateY(-60px);
     background-color: $basic-grey;
-    // position: relative;
-    // position: absolute;
-    // top: 1700px;
     padding: 0;
   }
 }
