@@ -13,7 +13,7 @@
     padding: 60px 80px;
     box-sizing: border-box;
     position: absolute;
-    top: 2260px;
+    top: 2310px;
     left: 110px;
     background-color: $basic-white;
     z-index: 1;
@@ -25,6 +25,7 @@
 
   @media screen and (min-width: $desktop-width) {
     background-color: $basic-white;
+    top: 2257px;
   }
 }
 
