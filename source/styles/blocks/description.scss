@@ -27,9 +27,6 @@
 }
 
 .description__wrapper {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px; */
   display: flex;
   flex-flow: column wrap;
 
@@ -152,8 +149,6 @@
 
   @media screen and (min-width: $tablet-width) {
     display: block;
-    // width: 134px;
-    // height: 280px;
     font-family: $secondary-font;
     font-size: 280px;
     line-height: 280px;
