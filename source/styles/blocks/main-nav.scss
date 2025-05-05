@@ -50,13 +50,34 @@
 }
 
 .main-nav__link {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media screen and (min-width: $tablet-width) {
+    padding-bottom: 9px;
+  }
 }
 
-.main-nav__link--index-desktop {
+.main-nav__link--active::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: $basic-green;
+}
+
+.main-nav__link--desktop {
   @media screen and (min-width: $desktop-width) {
     color: $basic-white;
+  }
+}
+
+.main-nav__link--desktop-active::before {
+  @media screen and (min-width: $desktop-width) {
+    background-color: $basic-white;
   }
 }
