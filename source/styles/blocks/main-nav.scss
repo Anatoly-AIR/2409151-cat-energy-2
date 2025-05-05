@@ -54,6 +54,12 @@
   text-transform: uppercase;
   color: $basic-black;
 
+  /* @media screen and (min-width: $desktop-width) {
+    color: $basic-white;
+  } */
+}
+
+.main-nav__link--index-desktop {
   @media screen and (min-width: $desktop-width) {
     color: $basic-white;
   }
