@@ -9,8 +9,9 @@
 
   @media screen and (min-width: $desktop-width) {
     transform: translateY(-60px);
-    background-color: $basic-grey;
+    // background-color: $basic-grey;
     padding: 0;
+    margin-right: 110px;
   }
 }
 
