@@ -6,22 +6,20 @@
   align-items: center;
   z-index: 0;
 
-  @media screen and (min-width: $tablet-width) {
+  /* @media screen and (min-width: $tablet-width) {
     // padding-left: 120px;
-  }
+  } */
 
   @media screen and (min-width: $desktop-width) {
     flex-direction: row;
-    // display: block;
     position: static;
-    // align-items: start;
   }
 }
 
 .promo::before {
   width: 320px;
   height: 302px;
-  // display: block;
+  //display: block;
   content: "";
   background-image: url("../../images/index-background-mobile@1x.png");
   background-repeat: no-repeat;
@@ -31,11 +29,11 @@
   inset: 0;
   z-index: -1;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     background-image: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 720px;
     height: 664px;
     position: absolute;
@@ -58,11 +56,11 @@
   opacity: 0.85;
   z-index: -1;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     opacity: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 720px;
     height: 664px;
     background-color: $basic-green;
@@ -117,6 +115,7 @@
     line-height: 20px;
     color: $basic-black;
     text-align: start;
+    margin: 40px 0 20px;
   }
 }
 
@@ -132,16 +131,18 @@
   text-transform: uppercase;
   color: $basic-white;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     width: 242px;
     height: 54px;
     position: absolute;
-    top: 210px;
+    top: 231px;
     left: 120px;
+    font-size: 20px;
+    line-height: 26px;
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media screen and (min-width: $desktop-width) {
     width: 244px;
     height: 54px;
     position: absolute;
@@ -156,6 +157,7 @@
     position: absolute;
     top: 143px;
     left: 557px;
+    display: block;
     z-index: 2;
   }
 }
