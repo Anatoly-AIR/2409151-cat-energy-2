@@ -15,10 +15,10 @@
   padding: 20px;
 
   @media screen and (min-width: $tablet-width) {
-    margin: 0 30px 30px;
-    padding: 77px 29px 53px 53px;
+    margin: 0 30px 33px;
+    padding: 74px 29px 53px 53px;
     display: grid;
-    grid-template: "item-1 item-2" 36px "item-3 item-2" 96px "item-4 item-2" 38px / 1fr 1fr;
+    grid-template: "item-1 item-2" 36px "item-3 item-2" 96px "item-4 item-2" 60px / 1fr 1fr;
     gap: 24px 19px;
   }
 
@@ -89,7 +89,7 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-top: 24px;
+    padding-top: 26px;
     grid-area: item-4;
   }
 }
@@ -103,7 +103,7 @@
     background-image: url("../../icons/cat-slim-tablet.svg");
     width: 200px;
     height: 211px;
-    margin-left: 20px;
+    margin: 2px 0 0 33px;
     grid-area: item-2;
   }
 
@@ -124,6 +124,7 @@
     width: 268px;
     height: 200px;
     grid-area: item-2;
+    margin-top: 15px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -135,7 +136,7 @@
 
 .cat-diet__arrow-icon {
   background-image: url("../../icons/arrow-icon.svg");
-  margin-left: 15px;
+  margin-left: 25px;
   width: 24px;
   height: 12px;
 }
