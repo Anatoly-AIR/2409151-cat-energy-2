@@ -10,10 +10,11 @@
   @media screen and (min-width: $desktop-width) {
     width: 565px;
     height: 199px;
-    padding: 60px 80px;
+    padding: 60px 72px 60px 80px;
+    // padding-right: 72px;
     box-sizing: border-box;
     position: absolute;
-    top: 2310px;
+    top: 2356px;
     left: 110px;
     background-color: $basic-white;
     z-index: 1;
@@ -71,8 +72,10 @@
 }
 
 .contacts__text--small span {
-  font-family: $primary-font;
-  font-size: 16px;
-  line-height: 56px;
+  @media screen and (min-width: $tablet-width) {
+    font-family: $primary-font;
+    font-size: 16px;
+    line-height: 56px;
+  }
 }
 

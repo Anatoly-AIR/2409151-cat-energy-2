@@ -9,8 +9,13 @@
 }
 
 .main-nav__toggle {
+  width: 24px;
+  height: 24px;
   border: none;
   background-color: $basic-white;
+  background-image: url("../../icons/mobile_menu_close.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 4px;
 
   @media screen and (min-width: $tablet-width) {
     display: none;

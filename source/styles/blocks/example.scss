@@ -1,9 +1,11 @@
 .example {
   background-color: $basic-grey;
   padding: 25px 20px 40px;
+  margin-top: 29px;
 
   @media screen and (min-width: $tablet-width) {
     background-color: $basic-white;
+    margin: 0;
     padding: 23px 0 96px;
     position: relative;
     z-index: 0;
@@ -13,7 +15,7 @@
     // background-color: $basic-grey;
     // background-color: $basic-white;
     margin: 0;
-    padding: 0 0 75px;
+    padding: 28px 0 22px;
   }
 }
 
@@ -30,10 +32,10 @@
 
   @media screen and (min-width: $desktop-width) {
     min-width: 1440px;
-    min-height: 517px;
+    min-height: 463px;
     content: "";
     position: absolute;
-    top: 135px;
+    top: 164px;
     background-color: $basic-grey;
     z-index: -1;
   }
@@ -110,9 +112,12 @@
 }
 
 .example__box {
-  width: 124px;
+  width: 122px;
   text-align: center;
+  margin-top: 20px;
   padding-top: 14px;
+  border: 1px solid $special-grey;
+  border-radius: 4px;
   // box-sizing: border-box;
 
   @media screen and (min-width: $tablet-width) {
@@ -126,8 +131,10 @@
 
   @media screen and (min-width: $desktop-width) {
     padding: 0;
-    padding-top: 69px;
-    padding-bottom: 55px;
+    padding-top: 10px;
+    // padding-bottom: 55px;
+    margin-top: 25px;
+    margin-right: 40px;
   }
 }
 
@@ -144,6 +151,10 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+  }
 }
 
 .example__box-subtitle {
@@ -152,10 +163,10 @@
   line-height: 12px;
   font-weight: 400;
   color: $basic-black;
-  // width: 59px;
+  width: 59px;
   margin: 8px auto 0;
 
-  @media (min-width: $tablet-width) {
+  @media screen and (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     margin-top: 11px;
@@ -170,7 +181,7 @@
   text-transform: uppercase;
   color: $basic-black;
   text-align: center;
-  margin: 20px auto 0;
+  margin: 19px auto 0;
 
   @media screen and (min-width: $tablet-width) {
     width: 174px;
@@ -184,6 +195,7 @@
   @media screen and (min-width: $desktop-width) {
     min-width: 327px;
     margin: 0;
+    text-align: left;
   }
 }
 
@@ -193,5 +205,10 @@
     font-size: 20px;
     line-height: 36px;
     margin-left: 84px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 61px;
   }
 }

@@ -1,5 +1,5 @@
 .main-header {
-  padding: 13px 20px 14px;
+  padding: 15px 20px 12px;
   // border-bottom: 1px #d9d9d9;
 
   @media screen and (min-width: $tablet-width) {
@@ -10,7 +10,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 55px 110px 29px;
+    padding: 61px 110px 29px;
     position: relative;
     z-index: 2;
   }
@@ -35,6 +35,8 @@
 }
 
 .main-header__logo-text {
+  margin-right: 10px;
+
   @media screen and (min-width: $tablet-width) {
     margin-left: 13px;
   }
