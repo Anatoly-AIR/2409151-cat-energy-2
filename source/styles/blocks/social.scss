@@ -1,14 +1,14 @@
 .social__list {
   width: 132px;
-  // width: 280px;
   list-style-type: none;
   display: flex;
-  // justify-content: center;
   justify-content: space-between;
   margin: 0;
   padding: 20px 0 15px;
-  // border-top: 1px solid $special-grey-2;
-  // border-bottom: 1px solid $special-grey-2;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 42px;
+  }
 }
 
 .social__link--vkontakte {
@@ -45,8 +45,4 @@
 
 .social__link--telegram:active {
   opacity: 0.3;
-}
-
-.social__item {
-  // margin-right: 10px;
 }
