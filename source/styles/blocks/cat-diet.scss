@@ -78,6 +78,7 @@
     width: 457px;
     height: 72px;
     margin-top: 15px;
+    padding-bottom: 0;
   }
 }
 
@@ -102,6 +103,7 @@
 
   @media screen and (min-width: $desktop-width) {
     padding-top: 8px;
+    margin: 0;
   }
 }
 
