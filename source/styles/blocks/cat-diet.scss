@@ -15,7 +15,7 @@
 
   @media screen and (min-width: $tablet-width) {
     margin: 0 30px 33px;
-    padding: 74px 29px 53px 53px;
+    padding: 77px 29px 53px 53px;
     display: grid;
     grid-template: "item-1 item-2" 36px "item-3 item-2" 96px "item-4 item-2" 60px / 1fr 1fr;
     gap: 24px 19px;
@@ -71,6 +71,7 @@
     line-height: 24px;
     margin: 0;
     grid-area: item-3;
+    border: none;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -95,7 +96,7 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    padding-top: 26px;
+    padding-top: 7px;
     grid-area: item-4;
   }
 
@@ -113,7 +114,7 @@
     background-image: url("../../icons/cat-slim-tablet.svg");
     width: 200px;
     height: 211px;
-    margin: 2px 0 0 33px;
+    margin: 5px 0 0 33px;
     grid-area: item-2;
   }
 
@@ -137,6 +138,7 @@
     width: 268px;
     height: 200px;
     grid-area: item-2;
+    margin: 0;
     margin-top: 15px;
   }
 
@@ -154,4 +156,8 @@
   margin-left: 15px;
   width: 24px;
   height: 12px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
 }
