@@ -30,8 +30,9 @@
 
 .cards__item {
   position: relative;
-  padding: 20px 0 25px;
+  padding: 20px 0 24px;
   z-index: 0;
+  border-bottom: 1px solid $special-grey-2;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
@@ -58,6 +59,8 @@
 }
 
 .cards__item--show-products {
+  padding-top: 26px;
+
   @media screen and (min-width: $tablet-width) {
     position: relative;
     padding-top: 140px;
@@ -93,8 +96,8 @@
 
 .cards__info-box {
   display: grid;
-  grid-template-columns: 70px 70px;
-  grid-template-rows: min-content 16px min-content min-content min-content;
+  grid-template-columns: 73px 67px;
+  grid-template-rows: min-content 15px min-content min-content min-content;
 
   @media screen and (min-width: $tablet-width) {
     grid-template-columns: 125px 125px;
@@ -161,6 +164,7 @@
   font-weight: 400;
   margin: 0;
   padding: 27px 0 41px;
+  border-bottom: 1px solid $special-grey-2;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 60px;
