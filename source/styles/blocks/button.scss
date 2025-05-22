@@ -33,6 +33,11 @@
   text-transform: uppercase;
   color: $special-dark-grey;
 
+  @media screen and (min-width: $tablet-width) {
+    width: 250px;
+    padding: 0;
+  }
+
   @media screen and (min-width: $desktop-width) {
     width: 170px;
   }

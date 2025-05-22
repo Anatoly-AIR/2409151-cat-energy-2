@@ -8,7 +8,7 @@
     grid-template-columns: 407px 132px 93px;
     grid-template-rows: min-content;
     border: 1px solid $special-grey;
-    padding: 26px 38px 28px;
+    padding: 25px 38px 27px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -58,12 +58,12 @@
     line-height: 20px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    padding: 0 0 25px;
+    padding: 3px 0 0;
     justify-self: end;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 26px 0;
+    padding: 25px 0;
     justify-self: start;
   }
 }
@@ -85,11 +85,11 @@
     line-height: 20px;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    padding: 0 0 25px;
+    padding: 3px 4px 0 0;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 26px 0;
+    padding: 25px 0;
     justify-self: start;
   }
 }

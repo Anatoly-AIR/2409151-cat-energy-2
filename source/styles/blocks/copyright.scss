@@ -11,6 +11,10 @@
     margin-right: 22px;
     padding-bottom: 5px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
 }
 
 .copyright__icon {
