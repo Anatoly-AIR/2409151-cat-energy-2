@@ -113,23 +113,22 @@
   width: 122px;
   text-align: center;
   margin-top: 20px;
-  padding-top: 14px;
+  padding: 15px 0;
   border: 1px solid $special-grey;
   border-radius: 4px;
+  position: relative;
 
   @media screen and (min-width: $tablet-width) {
     width: 160px;
-    margin-top: 20px;
     margin-right: 43px;
-    border: 1px solid $special-grey;
-    border-radius: 4px;
+    padding-bottom: 18px;
   }
 
   @media screen and (min-width: $desktop-width) {
+    height: 61px;
     padding: 0;
     padding-top: 10px;
-    // padding-bottom: 55px;
-    margin-top: 25px;
+    margin-top: 28px;
     margin-right: 40px;
   }
 }
@@ -159,14 +158,24 @@
   line-height: 12px;
   font-weight: 400;
   color: $basic-black;
-  width: 59px;
+  width: 79px;
   margin: 8px auto 0;
+  position: absolute;
+  top: 37px;
+  left: 21px;
+  background-color: $special-grey-3;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     margin-top: 11px;
     width: 126px;
+    top: 51px;
+    background-color: $basic-white;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    background-color: $basic-grey;
   }
 }
 
@@ -178,7 +187,7 @@
   text-transform: uppercase;
   color: $basic-black;
   text-align: center;
-  margin: 19px auto 0;
+  margin: 35px auto 0;
 
   @media screen and (min-width: $tablet-width) {
     width: 174px;
@@ -193,6 +202,7 @@
     min-width: 327px;
     margin: 0;
     text-align: left;
+    padding-top: 12px;
   }
 }
 
