@@ -11,15 +11,14 @@
 .main-nav__toggle {
   position: absolute;
   content: "";
-  top: 15px;
-  right: 20px;
+  top: 20px;
+  right: 22px;
   width: 24px;
   height: 24px;
   border: none;
   background-color: $basic-white;
   background-image: url("../../icons/menu_open.svg");
   background-repeat: no-repeat;
-  margin-bottom: 4px;
 
   @media screen and (min-width: $tablet-width) {
     display: none;
@@ -95,6 +94,7 @@
     font-size: 18px;
     line-height: 24px;
     border: none;
+    padding-top: 13px;
   }
 
   @media screen and (min-width: $desktop-width) {
