@@ -24,7 +24,7 @@
   @media screen and (min-width: $desktop-width) {
     // display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 37px 80px;
+    gap: 40px 80px;
   }
 }
 
@@ -75,15 +75,18 @@
 
 .cards__item--show-products::before {
   @media screen and (min-width: $tablet-width) {
-    min-width: 243px;
+    min-width: 320px;
     min-height: 426px;
     content: "";
     position: absolute;
-    top: 123px;
-    // z-index: -1;
-    // padding-top: 75px;
+    top: 125px;
     background-color: $basic-white;
     border: 2px solid $basic-grey;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 122px;
+    min-width: 242px;
   }
 }
 
@@ -117,7 +120,7 @@
   @media screen and (min-width: $desktop-width) {
     grid-template-columns: 85px 85px;
     grid-template-rows: min-content 3px min-content min-content min-content;
-    margin: 11px 0 0;
+    margin: 11px 0 4px;
   }
 }
 
@@ -169,7 +172,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-bottom: 4px;
+    padding-bottom: 2px;
   }
 }
 
@@ -231,11 +234,11 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding: 50px 0 23px;
+    padding: 52px 0 23px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding-top: 42px;
+    padding-top: 40px;
   }
 }
 

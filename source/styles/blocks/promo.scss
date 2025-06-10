@@ -46,7 +46,7 @@
 }
 
 .promo::after {
-  width: 320px;
+  min-width: 320px;
   height: 302px;
   display: block;
   content: "";

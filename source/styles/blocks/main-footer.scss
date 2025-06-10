@@ -35,6 +35,14 @@
   }
 }
 
+.main-footer__logo:hover {
+  opacity: 0.8;
+}
+
+.main-footer__logo:active {
+  opacity: 0.6;
+}
+
 .main-footer__copyright {
   width: 280px;
   height: 34px;

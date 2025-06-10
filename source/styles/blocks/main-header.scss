@@ -19,7 +19,7 @@
   border-bottom: 1px solid $special-grey-2;
 
   @media screen and (min-width: $desktop-width) {
-    padding: 61px 110px 74px;
+    padding: 61px 110px 66px;
   }
 }
 
@@ -36,6 +36,14 @@
     height: 50px;
     padding: 0;
   }
+}
+
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.6;
 }
 
 .main-header__logo-text {
