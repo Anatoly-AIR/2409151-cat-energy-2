@@ -17,7 +17,8 @@
     margin: 0 30px 33px;
     padding: 77px 29px 53px 53px;
     display: grid;
-    grid-template: "item-1 item-2" 36px "item-3 item-2" 96px "item-4 item-2" 60px / 1fr 1fr;
+    // grid-template: "item-1 item-2" 36px "item-3 item-2" 96px "item-4 item-2" 60px / 1fr 1fr;
+    grid-template: "item-1 item-2" minmax(36px, max-content) "item-3 item-2" minmax(96px, max-content) "item-4 item-2" minmax(60px, max-content) / 1fr 1fr;
     gap: 24px 19px;
   }
 
