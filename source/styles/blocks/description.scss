@@ -37,7 +37,9 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 230px 230px;
-    grid-template-rows: 280px 280px;
+    // grid-template-rows: 280px 280px;
+    // grid-template-rows: min-content min-content;
+    grid-template-rows: minmax(280px, max-content) minmax(280px, max-content);
     gap: 37px 153px;
     padding-top: 72px;
   }
@@ -53,7 +55,7 @@
 
 .description__box {
   width: 280px;
-  height: 60px;
+  // height: 60px;
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
@@ -61,7 +63,7 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 230px;
-    height: 280px;
+    // height: 280px;
     flex-direction: column;
     justify-content: start;
     padding: 0;
