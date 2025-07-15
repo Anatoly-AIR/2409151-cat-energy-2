@@ -80,6 +80,7 @@
   @media screen and (min-width: $tablet-width) {
     width: 436px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
