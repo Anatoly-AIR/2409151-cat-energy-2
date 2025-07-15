@@ -18,36 +18,75 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 324px);
-    gap: 60px;
+    gap: 33px 60px;
   }
 
   @media screen and (min-width: $desktop-width) {
     // display: grid;
     grid-template-columns: repeat(4, 245px);
-    gap: 63px 80px;
+    gap: 40px 80px;
   }
 }
 
 .cards__item {
-  // margin-bottom: 25px;
-  padding: 20px 0 25px;
+  position: relative;
+  padding: 20px 0 24px;
+  z-index: 0;
+  border-bottom: 1px solid $special-grey-2;
 
   @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $basic-grey;
+    padding: 54px 0 24px;
+    border: none;
   }
 
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 23px;
+  }
+}
+
+.cards__item::before {
   @media screen and (min-width: $tablet-width) {
-    padding-bottom: 40px;
+    min-width: 324px;
+    min-height: 429px;
+    content: "";
+    position: absolute;
+    top: 123px;
+    background-color: $basic-grey;
+    z-index: -1;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    min-width: 245px;
   }
 }
 
 .cards__item--show-products {
+  padding-top: 26px;
+
   @media screen and (min-width: $tablet-width) {
-    padding-top: 75px;
+    position: relative;
+    padding-top: 140px;
     background-color: $basic-white;
+  }
+}
+
+.cards__item--show-products::before {
+  @media screen and (min-width: $tablet-width) {
+    min-width: 320px;
+    min-height: 426px;
+    content: "";
+    position: absolute;
+    top: 125px;
+    background-color: $basic-white;
+    border: 2px solid $basic-grey;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    top: 122px;
+    min-width: 242px;
   }
 }
 
@@ -59,23 +98,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // transform: translateY(-80px);
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 34px;
   }
 }
 
 .cards__info-box {
   display: grid;
-  grid-template-columns: 70px 70px;
-  grid-template-rows: min-content 16px min-content min-content min-content;
+  grid-template-columns: 73px 67px;
+  grid-template-rows: min-content 15px min-content min-content min-content;
 
   @media screen and (min-width: $tablet-width) {
     grid-template-columns: 125px 125px;
-    grid-template-rows: min-content 20px min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    margin: 20px 0 16px;
+    row-gap: 10px;
   }
 
   @media screen and (min-width: $desktop-width) {
     grid-template-columns: 85px 85px;
-    grid-template-rows: min-content 20px min-content min-content min-content;
+    grid-template-rows: min-content 3px min-content min-content min-content;
+    margin: 11px 0 4px;
   }
 }
 
@@ -122,6 +167,12 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    border-bottom: 1px solid $special-grey;
+    padding-bottom: 2px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 2px;
   }
 }
 
@@ -132,11 +183,16 @@
   font-weight: 400;
   margin: 0;
   padding: 27px 0 41px;
+  border-bottom: 1px solid $special-grey-2;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 1px;
   }
 }
 
@@ -146,11 +202,11 @@
 
   @media screen and (min-width: $tablet-width) {
     width: 170px;
-    // height: 60px;
+    margin-top: 33px;
   }
 }
 
-.cards__more-image {
+.cards__more-plus {
   width: 30px;
   height: 30px;
   background-image: url("../../icons/plus.svg");
@@ -178,7 +234,11 @@
   @media screen and (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    padding: 50px 0 23px;
+    padding: 52px 0 23px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 40px;
   }
 }
 
@@ -197,6 +257,10 @@
     line-height: 18px;
     padding-bottom: 82px;
   }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 91px;
+  }
 }
 
 .item1 {
@@ -207,7 +271,8 @@
 .item2 {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
-  justify-self: end;
+  // justify-self: end;
+  margin-left: auto;
 }
 
 .item3 {

@@ -2,6 +2,15 @@
   width: 280px;
   height: 40px;
   border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: $basic-green-2;
+}
+
+button:active {
+  color: rgba($color: $basic-white, $alpha: 0.3);
 }
 
 .button--primary {
@@ -13,7 +22,6 @@
   text-transform: uppercase;
   color: $basic-white;
   padding: 0;
-  // margin-bottom: 20px;
 
   @media screen and (min-width: $tablet-width) {
     width: 250px;
@@ -24,6 +32,10 @@
   }
 }
 
+/* .button--primary:hover {
+  background-color: $basic-green-2;
+} */
+
 .button--secondary {
   background-color: $basic-grey-2;
   font-family: $secondary-font;
@@ -33,9 +45,18 @@
   text-transform: uppercase;
   color: $special-dark-grey;
 
+  @media screen and (min-width: $tablet-width) {
+    width: 250px;
+    padding: 0;
+  }
+
   @media screen and (min-width: $desktop-width) {
     width: 170px;
   }
+}
+
+.button--secondary:hover {
+  background-color: $special-grey-4;
 }
 
 .button--subscribe {
@@ -78,5 +99,37 @@
     align-self: center;
     grid-column: 4 / 5;
     grid-row: 1 / 2;
+  }
+}
+
+.button--promo {
+  background-color: $basic-green;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $basic-white;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 242px;
+    height: 54px;
+    position: absolute;
+    top: 231px;
+    left: 120px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 244px;
+    height: 54px;
+    position: absolute;
+    top: 456px;
+    left: 190px;
+    padding: 0;
   }
 }

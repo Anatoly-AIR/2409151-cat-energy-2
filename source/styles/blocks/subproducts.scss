@@ -16,18 +16,59 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  padding: 25px 0 36px;
+  padding: 25px 0 35px;
+  position: relative;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
-    padding: 74px 0 80px 40px;
+    padding: 89px 0 80px 40px;
   }
 
   @media screen and (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    padding: 71px 0 80px;
+    padding: 86px 0 80px;
+  }
+}
+
+.subproducts__title::before {
+  @media screen and (min-width: $tablet-width) {
+    content: "";
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 104px;
+    left: -30px;
+    background-color: $basic-green;
+
+    @media screen and (min-width: $desktop-width) {
+      width: 70px;
+      top: 105px;
+      left: -110px;
+    }
+  }
+}
+
+.subproducts__title::after {
+  content: "";
+  width: 35px;
+  height: 2px;
+  position: absolute;
+  top: 35px;
+  right: -20px;
+  background-color: $basic-green;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 355px;
+    top: 104px;
+    right: -30px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: 915px;
+    top: 105px;
+    right: -110px;
   }
 }
 
@@ -42,7 +83,7 @@
 .subproducts__card-wrapper {
   border-top: 1px solid $special-grey;
   border-bottom: 1px solid $special-grey;
-  padding-bottom: 19px;
+  // padding-bottom: 19px;
 
   @media screen and (min-width: $tablet-width) {
     border-bottom: none;

@@ -4,13 +4,11 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+  padding: 20px 0 15px;
 
-.social__item {
-  //margin-right: 24px;
+  @media screen and (min-width: $tablet-width) {
+    margin-left: 42px;
+  }
 }
 
 .social__link--vkontakte {

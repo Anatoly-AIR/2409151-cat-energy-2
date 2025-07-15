@@ -1,14 +1,15 @@
 .description {
-  margin: 20px;
+  padding: 0 20px;
 
   @media screen and (min-width: $tablet-width) {
-    margin: 30px;
+    padding: 14px 30px 6px;
+    border-bottom: 1px solid $special-grey-3;
   }
 
   @media screen and (min-width: $desktop-width) {
-    // margin: 0 106px 0 110px;
     margin: 0;
     padding: 0 110px;
+    border-bottom: none;
   }
 }
 
@@ -18,11 +19,14 @@
   line-height: 40px;
   font-weight: 400;
   color: $basic-black;
+  margin: 0;
+  padding-bottom: 41px;
 
   @media screen and (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -33,14 +37,15 @@
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 230px 230px;
-    grid-template-rows: 280px 280px;
+    // grid-template-rows: 280px 280px;
+    // grid-template-rows: min-content min-content;
+    grid-template-rows: minmax(280px, max-content) minmax(280px, max-content);
     gap: 37px 153px;
-    padding-top: 32px;
+    padding-top: 72px;
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: 1220px;
-    // width: 100%;
+    width: 1204px;
     display: flex;
     gap: 0;
     flex-flow: row nowrap;
@@ -50,15 +55,15 @@
 
 .description__box {
   width: 280px;
-  height: 60px;
+  // height: 60px;
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding-bottom: 20px;
   position: relative;
 
   @media screen and (min-width: $tablet-width) {
     width: 230px;
-    height: 280px;
+    // height: 280px;
     flex-direction: column;
     justify-content: start;
     padding: 0;
@@ -131,8 +136,8 @@
   line-height: 18px;
   font-weight: 400;
   width: 200px;
-  height: 54px;
   margin: 0;
+  margin-top: 2px;
   z-index: 1;
 
   @media screen and (min-width: $tablet-width) {
@@ -140,7 +145,7 @@
     height: 72px;
     font-size: 16px;
     line-height: 24px;
-    padding-top: 31px;
+    padding-top: 30px;
   }
 }
 
@@ -156,7 +161,7 @@
     color: $basic-grey-2;
     margin: 0;
     position: absolute;
-    top: -35px;
+    top: -38px;
     left: 50%;
   }
 }

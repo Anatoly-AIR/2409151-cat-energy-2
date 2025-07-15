@@ -4,13 +4,14 @@
 
   @media screen and (min-width: $tablet-width) {
     justify-content: center;
-    padding: 100px 0 0;
+    padding: 105px 0 0;
   }
 
   @media screen and (min-width: $desktop-width) {
     transform: translateY(-60px);
-    background-color: $basic-grey;
+    // background-color: $basic-grey;
     padding: 0;
+    margin-right: 110px;
   }
 }
 
@@ -18,8 +19,7 @@
   z-index: 1;
 
   @media screen and (min-width: $tablet-width) {
-    // top: -150px;
-    // left: 104px;
+    transform: translateX(19px);
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -32,12 +32,15 @@
   transform: translateX(-20px);
 
   @media screen and (min-width: $tablet-width) {
-    // top: -150px;
-    // left: 366px;
+    transform: translateX(0);
   }
 
   @media screen and (min-width: $desktop-width) {
     top: -136px;
     left: 1053px;
   }
+}
+
+.cat-slider__image {
+  display: block;
 }
